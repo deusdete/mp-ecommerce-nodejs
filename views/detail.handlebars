@@ -88,10 +88,7 @@
                   {{ unit }}
                 </h3>
               </div>
-              {{!-- <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                data-button-label="Pague a compra" data-preference-id='<%= global.id %>'>
-                </script> --}}
-              <button type="submit" id="comprar-button" formmethod="post">Comprar</button>
+              <div class="loader" id="comprar-button" ></div>
               <div id="mercadopago-button" ></div>
             </div>
           </div>
