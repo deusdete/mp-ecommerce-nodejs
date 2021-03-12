@@ -29,6 +29,10 @@ app.get('/detail', function (req, res) {
   res.render('detail', req.query);
 });
 
+app.get('/success', function (req, res) {
+  res.render('success', req.query);
+});
+
 app.post('/create_preference', (req, res) => {
   console.log('req',req.body)
   const {title, price, picture_url} = req.body;
